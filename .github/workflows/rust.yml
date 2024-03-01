@@ -20,6 +20,20 @@ jobs:
       - name: Build Project
         run: cargo build --release
 
+      - name: echo1
+        run: echo "Value of MY_VARIABLE is ${{ secrets.CARGO_TOKEN }}"
+
+      - name: echo2
+        run: echo "${CRATES_TOKEN}"
+        env:
+          CARGO_TOKEN: ${{ secrets.CARGO_TOKEN }}
+
+      - name: echo3
+        run: echo "$CRATES_TOKEN"
+        env:
+          CARGO_TOKEN: ${{ secrets.CARGO_TOKEN }}
+
+
       - name: Publish Crate
         run: cargo publish --token ${CRATES_TOKEN}
         env:
