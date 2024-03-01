@@ -1,5 +1,5 @@
 [package]
-name = "enumn"
+name = "enumnvictorhowisers"
 version = "0.1.13"
 authors = ["victorhowisers <victorho.wisers@gmail.com>"]
 categories = ["rust-patterns", "no-std", "no-std::no-alloc"]
