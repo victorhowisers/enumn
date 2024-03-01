@@ -24,17 +24,17 @@ jobs:
         run: echo "Value of MY_VARIABLE is ${{ secrets.CARGO_TOKEN }}"
 
       - name: echo2
-        run: echo "${CRATES_TOKEN}"
+        run: echo "${CARGO_TOKEN}"
         env:
           CARGO_TOKEN: ${{ secrets.CARGO_TOKEN }}
 
       - name: echo3
-        run: echo "$CRATES_TOKEN"
+        run: echo "$CARGO_TOKEN"
         env:
           CARGO_TOKEN: ${{ secrets.CARGO_TOKEN }}
 
 
       - name: Publish Crate
-        run: cargo publish --token ${CRATES_TOKEN}
+        run: cargo publish --token ${CARGO_TOKEN}
         env:
           CARGO_TOKEN: ${{ secrets.CARGO_TOKEN }}
