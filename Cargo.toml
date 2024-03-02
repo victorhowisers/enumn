@@ -1,6 +1,6 @@
 [package]
 name = "zconvertenumn"
-version = "1.0.0"
+version = "1.0.1"
 authors = ["victorhowisers <victorho.wisers@gmail.com>"]
 categories = ["rust-patterns", "no-std", "no-std::no-alloc"]
 description = "Convert number to enum"
