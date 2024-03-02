@@ -1,11 +1,11 @@
 [package]
-name = "enumnvictorhowisers"
+name = "zconvertenumn"
 version = "1.0.0"
 authors = ["victorhowisers <victorho.wisers@gmail.com>"]
 categories = ["rust-patterns", "no-std", "no-std::no-alloc"]
 description = "Convert number to enum"
 documentation = "https://docs.rs/enumn"
-edition = "2024"
+edition = "2021"
 keywords = ["enum", "integer"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/victorhowisers/enumn"
